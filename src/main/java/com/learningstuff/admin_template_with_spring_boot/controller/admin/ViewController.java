@@ -1,4 +1,4 @@
-package com.learningstuff.admin_template_with_spring_boot.controller;
+package com.learningstuff.admin_template_with_spring_boot.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +12,7 @@ public class ViewController {
     public ModelAndView indexView(ModelAndView modelAndView) {
 
         modelAndView.addObject("title", "AdminLET | Template");
-        modelAndView.setViewName("view/index");
+        modelAndView.setViewName("admin/view/index");
         return modelAndView;
     }
 }
